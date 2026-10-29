@@ -2,6 +2,6 @@
 00:00 +0: original validators reject invalid inputs and accept valid inputs
 00:00 +1: offline service is deterministic and recovers from simulated failure
 00:02 +2: empty form displays required validation messages
-00:03 +3: tip error and retry produce real UI states
-00:03 +4: valid inputs show the green demo success SnackBar
-00:03 +5: All tests passed!
+00:04 +3: tip error and retry produce real UI states
+00:04 +4: valid inputs show the green demo success SnackBar
+00:05 +5: All tests passed!

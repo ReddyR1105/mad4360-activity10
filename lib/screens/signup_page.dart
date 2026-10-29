@@ -25,6 +25,7 @@ class _SignupPageState extends State<SignupPage> {
 
   void _submit() {
     if (!_formKey.currentState!.validate()) return;
+    FocusScope.of(context).unfocus();
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
         backgroundColor: Colors.green,
@@ -84,6 +85,8 @@ class _SignupPageState extends State<SignupPage> {
                     key: const Key('password'),
                     controller: _passwordController,
                     validator: validatePassword,
+                    textInputAction: TextInputAction.done,
+                    onFieldSubmitted: (_) => _submit(),
                     obscureText: true,
                     enableSuggestions: false,
                     autocorrect: false,

@@ -1,6 +1,10 @@
 # Build verification
 
-Release APK built successfully. Five automated tests passed and static analysis found no issues. APK signature verified with Android apksigner. Device installation and keyboard checks remain for the team.
+The latest universal release APK was built with Flutter, its Android signature verified, and the APK installed and launched on Pixel 4a API 37.1. The process remained running after launch.
+
+Unit/widget tests: 5 passed. Static analysis: no issues.
+The success test submits through the password keyboard Done action.
 
 APK: Activity10_Signup_Quest.apk
-SHA-256: 0a82c77f75a8de96520b67c44b0a1e7e392c537eb8e27649bbe2cbebd60f4c08
+Architectures: armeabi-v7a, arm64-v8a, x86_64.
+SHA-256: 14df35a51e317cbff6ccf9cce28ec7c5919966bedadc96626ec236651c83755b

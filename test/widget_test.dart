@@ -69,7 +69,7 @@ void main() {
     await tester.enterText(find.byKey(const Key('name')), 'Rohan');
     await tester.enterText(find.byKey(const Key('email')), 'demo@example.com');
     await tester.enterText(find.byKey(const Key('password')), 'abc123');
-    await tester.tap(find.byKey(const Key('submit')));
+    await tester.testTextInput.receiveAction(TextInputAction.done);
     await tester.pump();
     expect(find.byType(SnackBar), findsOneWidget);
     expect(
